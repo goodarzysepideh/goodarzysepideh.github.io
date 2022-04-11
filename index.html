@@ -62,13 +62,7 @@
   <div class="w3-row-padding w3-center" style="margin-top:64px">
     <div class="w3-col">
       <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
-      <p>The SmartOS application is part of a research project at the System lab, Computer science department, University of Colorado Boulder.
-        The final goal of this research is to redistribute the computer Hardware resources based on your preferences smartly.
-        This version of the application will collect some information from your computer including time, the list of currently running apps and their resource usage profile and resource utilization of the system and the active app that you are currently working with, mouse clicks and movement, keyboard clicks patterns, video and audio of the you through computer camera and microphone.
-        You also need to report the times that you are unsatisfied with your computer.
-        Anybody 18 years old or older residing in the US with a Computer/laptop/virtual machine with a linux operating system will be eligible to participate in this study.
-        You just need to download the app and run it and fill the first survey and let us know about the times that you are unsatisfied with your computer after you filled the survey.
-        We thank you in advance for helping us with this research.</p>
+      <p>The SmartOS application is part of a research project at the System lab, Computer science department, University of Colorado Boulder. The final goal of this research is to reduce user frustration with the slow performance of their computers by automatically and intelligently reallocating the computer hardware resources on your computer to applications based on learning your preferences and priorities. This version of the application will collect some information from your computer, including time, the list of currently running apps and their resource usage profile and resource utilization of the system and the active app that you are currently working with, mouse clicks and movements, keyboard clicks patterns, audio features, head movements, and gesture detection through your computer's microphone and webcam. You also need to report the times you are dissatisfied with your computer. Participants in the study must be 18 years or older residing in the US with a computer/laptop/virtual machine with a Ubuntu 20.04 LTS operating system. You will need to download the app and run it, fill out a brief survey, and then the app will passively monitor your actions. In addition, you will need to inform us when you are dissatisfied with your computer. We thank you in advance for helping us with this research.</p>
       <p>In order to install and run the smartOS app you need to complete the following form:</p>
       <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfTkJHFZ7RaEY0RBUYb-VEEAJ6gXB9DCOvIvbyl6TtZfpOncQ/viewform?embedded=true" width="640" height="479" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
       <p>The IRB protocol number for this human study research is: 22-0011</p>
@@ -144,7 +138,42 @@
   <div class="w3-row-padding w3-center" style="margin-top:64px">
     <div class="w3-col">
       <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
-      <p></p>
+      <p>
+        <ol>
+          <li>You need to download the application into your ubuntu 20.04 LTS computer/laptop/virtual machine.</li>
+          <li>Make sure you are connected to the internet and your webcam and audio microphone work.</li>
+          <li>Now open the terminal by pressing: <kbd>ctrl+alt+t</kbd></li>
+          <li>Then redirect to the location of your installed folder by using the following command:
+          <code>cd ~/Downloads/SmartOSApp</code></li>
+          <li>Now type the following commands in the terminal and press enter after each one:</li>
+          <ul>
+            <li>
+              <code>sudo su</code>
+            </li>
+            <li>
+              Type your login password and press enter
+            </li>
+            <li>
+              <code>chmod +x install_required_libraries.sh</code>
+            </li>
+            <li>
+              <code>chmod +x SmartOSController</code>
+            </li>
+            <li>
+              <code>./install_required_libraries.sh</code>
+            </li>
+            <li>
+              <code>xhost +</code>
+            </li>
+            <li>
+              <code>./SmartOSController</code>
+            </li>
+          </ul>
+          <li>Now open this link: <a href="http://localhost:5000">http://localhost:5000</a> in your browser and let the application run by not closing the application tab in your browser and not closing the terminal. </li>
+          <li>If you have to turn off your computer, please repeat steps 2 to 6 each time you turn on your computer.</li>
+        </ol>
+          Please let us know if you face any problems or questions about this procedure by emailing me. My email address is sepideh.goodarzy@colorado.edu
+      </p>
     </div>
   </div>
 </div>
@@ -155,7 +184,27 @@
   <div class="w3-row-padding w3-center" style="margin-top:64px">
     <div class="w3-col">
       <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
-      <p></p>
+      <p>
+        <ol>
+          <li>
+            Go to the terminal that is running the smartOS app
+          </li>
+          <li> 
+            Press the following key combination: 
+            <ul>
+              <li>
+                <kbd>ctrl + c</kbd> 
+              </li>
+              <li>
+                <kbd>ctrl + z</kbd> 
+              </li>
+            </ul>
+          </li>
+          <li>
+            Delete the downloaded folder
+          </li>
+        </ol>
+      </p>
     </div>
   </div>
 </div>
